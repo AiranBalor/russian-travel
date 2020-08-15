@@ -1,0 +1,30 @@
+.place__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.06;
+  max-width: 460px;
+}
+
+@media screen and (max-width: 1200px) {
+  .place__title {
+    max-width: 440px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .place__title {
+    font-size: 42px;
+    line-height: 1.1; /* Здесь видимо опечатка макета. При значениях шрифта и высоты по Figma строка title не может быть 92px в высоту. Как и перенос слов на 2 строку, если только не использовать пробелы (что в теории сломает верстку)*/
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .place__title {
+    font-size: 32px;
+    line-height: 1.09;
+    width: calc(100% - 32px);
+    margin: 0 auto;
+  }
+}
