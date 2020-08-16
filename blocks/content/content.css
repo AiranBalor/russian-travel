@@ -1,0 +1,12 @@
+.content {
+  min-width: 320px;
+  margin: 0;
+}
+
+@media screen and (min-width: 1281px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+}

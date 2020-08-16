@@ -29,3 +29,11 @@
     max-width: 288px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .intro {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 92px 0 0 0;
+  }
+}

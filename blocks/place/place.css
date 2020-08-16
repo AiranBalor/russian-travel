@@ -26,11 +26,25 @@
   }
 }
 
+/*Добавил медиазапрос, поскольку две колонки в places были шире, чем основной контент, и некрасиво растягивали страницу*/
+@media screen and (max-width: 616px) {
+  .place {
+    grid-template-columns: repeat(1, minmax(min-content, max-content));
+    row-gap: 32px;
+    column-gap: 0;
+    padding-bottom: 52px;
+  }
+}
+
+/*Пересчитаны отступы на данном разрешении*/
 @media screen and (max-width: 425px) {
   .place {
     grid-template-columns: repeat(1, minmax(min-content, max-content));
     row-gap: 32px;
     column-gap: 0;
-    padding-bottom: 42px;
+    padding-bottom: 48px;
+  }
+  .place:last-of-type {
+    padding-bottom: 64px;
   }
 }

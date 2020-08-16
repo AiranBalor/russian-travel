@@ -24,3 +24,10 @@
     padding-top: 64px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .places {
+    width: 50vw;
+    max-width: 1280px;
+  }
+}

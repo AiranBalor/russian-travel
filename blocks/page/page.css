@@ -1,7 +1,5 @@
 .page {
   background-color: #2A2C2F;
-  min-width: 320px;
-  max-width: 1280px;
   font-family: 'Inter', Arial, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
@@ -9,4 +7,11 @@
   -moz-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 1281px) {
+  .page {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
